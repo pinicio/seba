@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="application-name" content="Seba">
-    <title>StudioIgnis - Web Development</title>
+    <title>Studio E - Buenos Aires</title>
     <link rel="stylesheet" href="css/all.css"/>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
