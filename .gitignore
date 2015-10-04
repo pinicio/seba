@@ -1,6 +1,7 @@
 # Custom #
 ##########
 vendor/
+video/
 .idea/
 
 # Compiled source #

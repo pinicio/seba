@@ -6,6 +6,8 @@
     <meta name="application-name" content="Seba">
     <title>Studio E - Buenos Aires [DEVELOPMENT]</title>
     <link rel="stylesheet" href="css/all.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -16,7 +18,7 @@
     ga('send', 'pageview');
     </script>
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom" data-offset="53.5">
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom" data-offset="53.5" data-vide-bg="../video/background">
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -43,9 +45,9 @@
                     <li>
                         <a class="page-scroll" href="#tech">Technology</a>
                     </li>
-                    <li>
+                    <?php /* <li>
                         <a class="page-scroll" href="#labs">Labs</a>
-                    </li>
+                    </li> */ ?>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
@@ -247,47 +249,9 @@
                         </div>
                     </div>
                 </a>
-                <a href="http://notnever.com.ar" target="_blank" class="work col-sm-4">
-                    <img src="/images/works/not-never.png" class="img-responsive">
-                    <div class="work-details">
-                        <div class="page-header">
-                            <h3>Not Never</h3>
-                        </div>
-                        <p>IT bags. Leather handbags.</p>
-                        <p class="work-tech-icons text-center">
-                            <span class="devicons devicons-html5" title="HTML 5"></span>
-                            <span class="devicons devicons-css3_full" title="CSS 3"></span>
-                            <span class="devicons devicons-javascript" title="JavaScript"></span>
-                        </p>
-                        <div class="visit-site">
-                            <button class="btn btn-block btn-info"><i class="fa fa-external-link-square"></i> Visit website</button>
-                        </div>
-                    </div>
-                </a>
-                <a href="http://diegoroldan.net" target="_blank" class="work col-sm-4">
-                    <img src="/images/works/diegoroldan.png" class="img-responsive">
-                    <div class="work-details">
-                        <div class="page-header">
-                            <h3>Diego Roldan Photography</h3>
-                        </div>
-                        <p>Fashion Photographer</p>
-                        <p class="work-tech-icons text-center">
-                            <span class="devicons devicons-html5" title="HTML 5"></span>
-                            <span class="devicons devicons-css3_full" title="CSS 3"></span>
-                            <span class="devicons devicons-javascript" title="JavaScript"></span>
-                            <span class="devicons devicons-wordpress" title="Wordpress"></span>
-                            <span class="devicons devicons-php" title="PHP"></span>
-                            <span class="devicons devicons-mysql" title="MySQL"></span>
-                        </p>
-                        <div class="visit-site">
-                            <button class="btn btn-block btn-info"><i class="fa fa-external-link-square"></i> Visit website</button>
-                        </div>
-                    </div>
-                </a>
             </div>
-            <div class="page-header">
-                <h2>Our <strong>Clients</strong></h2>
-            </div>
+
+            <?php /* <div class="page-header">
             <div class="row">
                 <div class="client col-sm-3">
                     <a href="http://weremakers.com" target="_blank">
@@ -348,7 +312,7 @@
                         <i class="icon icon-external-link-sign"></i>
                     </a>
                 </div>
-            </div>
+            </div> */ ?>
         </div>
     </section>
 
@@ -360,18 +324,6 @@
             <div class="row">
                 <div class="tech col-sm-2">
                     <div class="tech-icon">
-                        <i class="devicons devicons-laravel"></i>
-                    </div>
-                    <h3><strong>Laravel</strong></h3>
-                </div>
-                <div class="tech col-sm-2">
-                    <div class="tech-icon">
-                        <i class="devicons devicons-angular"></i>
-                    </div>
-                    <h3><strong>AngularJS</strong></h3>
-                </div>
-                <div class="tech col-sm-2">
-                    <div class="tech-icon">
                         <i class="devicons devicons-php"></i>
                     </div>
                     <h3><strong>php</strong></h3>
@@ -380,7 +332,19 @@
                     <div class="tech-icon">
                         <i class="devicons devicons-database"></i>
                     </div>
-                    <h3><strong>MySQL / MongoDB</strong></h3>
+                    <h3><strong>MySQL</strong></h3>
+                </div>
+                <div class="tech col-sm-2">
+                    <div class="tech-icon">
+                        <i class="devicons devicons-wordpress"></i>
+                    </div>
+                    <h3><strong>Wordpress</strong></h3>
+                </div>
+                <div class="tech col-sm-2">
+                    <div class="tech-icon">
+                        <i class="devicons devicons-bootstrap"></i>
+                    </div>
+                    <h3><strong>Bootstrap</strong></h3>
                 </div>
                 <div class="tech col-sm-2">
                     <div class="tech-icon">
@@ -398,7 +362,7 @@
         </div>
     </section>
 
-    <section id="labs">
+    <?php /* <section id="labs">
         <div class="container text-center">
             <div class="page-header">
                 <h2><i class="icon-beaker"></i> Come visit our <strong class="text-ignis">labs</strong></h2>
@@ -463,7 +427,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> */ ?>
 
     <section id="contact">
         <div class="container">
@@ -472,29 +436,38 @@
             </div>
             <div class="row">
                 <div class="work col-sm-6">
-                    <h3><a href="/cdn-cgi/l/email-protection#5e3631323f1e2d2a2b3a3731373930372d70303b2a"><i class="fa fa-fw fa-envelope"></i> <span class="__cf_email__" data-cfemail="e68e898a87a6959293828f898f81888f95c8888392">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">
-                                /* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script></a></h3>
-                    <h3><i class="fa fa-fw fa-phone"></i> +54 11 5641 4509</h3>
+                    <h3>
+                        <i class="fa fa-fw fa-envelope"></i>
+                        <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#111;&#108;&#97;&#64;&#115;&#101;&#98;&#97;&#46;&#99;&#111;&#109;&#46;&#97;&#114;">&#104;&#111;&#108;&#97;&#64;&#115;&#101;&#98;&#97;&#46;&#99;&#111;&#109;&#46;&#97;&#114;</a>
+                    </h3>
+                    <h3>
+                        <i class="fa fa-fw fa-skype"></i> sebdecc
+                    </h3>
+                    <?php /* <h3><i class="fa fa-fw fa-phone"></i> +549 115 6412 4253</h3> */ ?>
                 </div>
                 <div class="work col-sm-6">
-                    <h3><a target="_blank" href="https://www.facebook.com/studioignis"><i class="fa fa-fw fa-facebook"></i> Facebook</a></h3>
-                    <h3><a target="_blank" href="https://plus.google.com/+StudioIgnisNet"><i class="fa fa-fw fa-google-plus"></i> Google+</a></h3>
-                    <h3><a target="_blank" href="https://twitter.com/studioignis"><i class="fa fa-fw fa-twitter"></i> Twitter</a></h3>
-                    <h3><a target="_blank" href="http://instagram.com/studioignis"><i class="fa fa-fw fa-instagram"></i> Instagram</a></h3>
+                    <h3><a target="_blank" href="https://www.facebook.com/sebadev"><i class="fa fa-fw fa-facebook"></i> Facebook</a></h3>
+                    <h3><a target="_blank" href="https://plus.google.com/+SebaDev"><i class="fa fa-fw fa-google-plus"></i> Google+</a></h3>
+                    <h3><a target="_blank" href="https://twitter.com/sebadev"><i class="fa fa-fw fa-twitter"></i> Twitter</a></h3>
+                    <?php /* <h3><a target="_blank" href="http://instagram.com/sebadev"><i class="fa fa-fw fa-instagram"></i> Instagram</a></h3> */ ?>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
+        <div id="wrapper"></div>
+
         <div class="container">
-            &copy; 2015 StudioIgnis&trade;
-            <a href="https://www.digitalocean.com/?refcode=95c5f967f4bf" class="pull-right">
+            &copy; <?php echo date('Y'); ?> SebaDev&trade;
+            <a href="sp.php" class="pull-right"><i class="fa fa-language"></i> Espa&ntilde;ol</a>
+            <?php /* <a href="https://www.digitalocean.com/?refcode=95c5f967f4bf" class="pull-right">
                 <img src="/images/DO_Proudly_Hosted_Badge_White-0f0151a4.png" alt="Proudly hosted by DigitalOcean" width="150"/>
-            </a>
+            </a> */ ?>
         </div>
     </footer>
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.vide.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/all.js"></script>
     </script>

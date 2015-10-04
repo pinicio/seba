@@ -1775,7 +1775,7 @@ strong {
     font-weight: 400; }
 
 .brand {
-    color: #444;
+    color: #eee; /* 444 */
     font-weight: 300;
     font-family: Roboto; }
 .brand span {
@@ -1966,7 +1966,8 @@ section .page-header:first-of-type, section .page-header:first-of-type h1, secti
     display: table; }
 .intro:before {
     content: "";
-    background: url(/images/studioignis-intro.jpg) center top fixed;
+    /*background: url(/images/studioignis-intro.jpg) center top fixed;
+    background: url(/video/background.jpg) center top fixed;*/
     background-size: cover;
     position: absolute;
     top: 0;
@@ -3128,7 +3129,9 @@ p {
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: 300;
-    line-height: 1.4; }
+    line-height: 1.4;
+    color: #FFF;
+}
 @media (min-width: 768px) {
     .lead {
         font-size: 21px; } }
@@ -9169,12 +9172,12 @@ html, body {
 strong {
     font-weight: 400; }
 
-.brand {
+/*.brand {
     color: #444;
     font-weight: 300;
     font-family: Roboto; }
 .brand span {
-    color: #f60; }
+    color: #f60; }*/
 
 .text-ignis {
     color: #f60; }
@@ -9470,140 +9473,7 @@ fieldset[disabled] .btn-ignis.active {
     background-color: #fff;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1); }
 
-.navbar-custom {
-    background: rgba(0, 0, 0, 0.2);
-    border-width: 0; }
-.navbar-custom a {
-    color: #fff; }
-.navbar-custom .navbar-toggle {
-    color: #fff; }
-.navbar-custom .nav > li > a {
-    border-bottom: 3px solid transparent; }
-.navbar-custom .nav > li > a:hover, .navbar-custom .nav > li > a:focus, .navbar-custom .nav li.active a {
-    border-bottom-color: #fff;
-    background: none; }
-.navbar-custom .navbar-brand {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 16px !important; }
-.navbar-custom .navbar-brand, .navbar-custom .navbar-brand * {
-    transition: all 0.2s; }
-.navbar-custom .navbar-brand:before, .navbar-custom .navbar-brand:after {
-    content: " ";
-    position: absolute;
-    top: 12px;
-    left: -8px;
-    width: 16px;
-    height: 24px;
-    background: url(/images/studioignis-navbar-brand.png) left top;
-    transition: opacity 0.2s; }
-.navbar-custom .navbar-brand:after {
-    background-position: right top;
-    opacity: 0; }
-.navbar-custom .navbar-brand:hover:after {
-    opacity: 1; }
-.navbar-custom .navbar-brand:hover span {
-    color: #ff9900; }
-
-section, footer {
-    padding: 40px 0; }
-section .container > .page-header, footer .container > .page-header {
-    text-align: center; }
-section .page-header:first-of-type, section .page-header:first-of-type h1, section .page-header:first-of-type h2, section .page-header:first-of-type h3, footer .page-header:first-of-type, footer .page-header:first-of-type h1, footer .page-header:first-of-type h2, footer .page-header:first-of-type h3 {
-    margin-top: 0;
-    font-weight: 300; }
-
-.intro {
-    width: 100%;
-    height: 100%;
-    display: table; }
-.intro:before {
-    content: "";
-    background: url(/images/studioignis-intro.jpg) center top fixed;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.7; }
-.intro .logo {
-    display: block;
-    margin: 0 auto; }
-.intro .intro-body {
-    display: table-cell;
-    vertical-align: middle; }
-.intro .intro-body .brand-heading {
-    font-size: 5rem;
-    display: inline-block; }
-.intro .intro-body .lead {
-    font-size: 1.5rem; }
-
-#about {
-    background: #f60;
-    color: #fff; }
-#about .service:hover .service-icon {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2); }
-#about .service .service-icon {
-    display: inline-block;
-    background: #fff;
-    color: #f60;
-    border-radius: 50%;
-    padding: 20px;
-    margin-top: 20px;
-    cursor: default;
-    transition: all 0.2s; }
-
-#works .work {
-    position: relative;
-    padding: 0;
-    color: #fff;
-    text-decoration: none; }
-#works .work, #works .work * {
-    transition: all 0.2s; }
-#works .work:hover .work-details, #works .work:focus .work-details, #works .work:active .work-details {
-    opacity: 1; }
-#works .work-details {
-    opacity: 0;
-    position: absolute;
-    padding: 30px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 102, 0, 0.9); }
-@media (max-width: 767px) {
-    #works .work-details {
-        opacity: 1;
-        position: unset; } }
-#works .work-details .work-tech-icons {
-    font-size: 2em;
-    padding: 10px 0; }
-
-#tech {
-    background: #f60;
-    color: #fff; }
-#tech .tech {
-    text-align: center;
-    color: #fff;
-    text-decoration: none; }
-#tech .tech h3 {
-    margin: 0; }
-#tech .tech .tech-icon {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    cursor: default;
-    transition: all 0.2s; }
-#tech .tech .tech-icon:hover, #tech .tech .tech-icon:focus {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2); }
-#tech .tech .tech-icon .devicons {
-    font-size: 100px; }
-
-#labs {
+/*#labs {
     background: url(/images/labs-bg.jpg) center center fixed;
     background-size: cover;
     color: #ddd; }
@@ -9629,23 +9499,7 @@ section .page-header:first-of-type, section .page-header:first-of-type h1, secti
     font-size: 150px; }
 #labs .lab:hover .lab-icon, #labs .lab:focus .lab-icon {
     -webkit-transform: scale(1.2);
-    transform: scale(1.2); }
-
-#contact {
-    background: #222;
-    color: #fff; }
-#contact h3 {
-    font-weight: 300; }
-#contact a {
-    color: #fff;
-    text-decoration: none; }
-
-footer {
-    background: #333;
-    color: #fff; }
-footer a {
-    color: #fff;
-    text-decoration: none; }
+    transform: scale(1.2); }*/
 
 /*# sourceMappingURL=app.css.map */
 /*!
